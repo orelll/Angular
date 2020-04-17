@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoesComponent } from './todoes/todoes.component';
-import { MenuComponent } from './menu/menu.component';
+import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ToDoesComponent } from './to-does/to-does.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoesComponent,
-    MenuComponent,
+    ToDoDetailsComponent,
+    DashboardComponent,
+    ToDoesComponent
   ],
   imports: [
     BrowserModule,
