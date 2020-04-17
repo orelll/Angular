@@ -1,6 +1,10 @@
-
-<p>Notatka nr {{todo.id}}</p>
-<p>{{todo.name}}</p>
-<div>{{todo.content}}</div>
-
-<button (click)="goBack()">wróć</button>
+<div *ngIf="todo">
+  <h2>{{todo.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{todo.id}}</div>
+  <div>
+    <label>zawartość:
+      <input [(ngModel)]="todo.id" placeholder="..." />
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

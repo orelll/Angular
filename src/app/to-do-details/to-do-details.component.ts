@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ToDo } from '../common/todo';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-to-do-details',
