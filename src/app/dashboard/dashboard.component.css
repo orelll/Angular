@@ -1,0 +1,49 @@
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(180, 180, 0);
+}
+
+.header {
+  font-size: xx-large;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.todo {
+  border-radius: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 150px;
+  background-color: rgb(253, 253, 81);
+  text-align: center;
+  border-radius: 2px;
+  border-color: yellowgreen;
+  border-style: solid;
+  margin: 10px;
+}
+
+.topRow {
+  display: inline-flex;
+}
+
+.searchBar {
+  height: 30px;
+  min-width: 50px;
+  max-width: 150px;
+  vertical-align: middle;
+  margin: 10px;
+  
+}
