@@ -1,4 +1,4 @@
 <h3>Najnowsze notatki</h3>
-<div>
-    
-</div>
+<a *ngFor="let todo of todoes" routerLink="/todo/{{todo.id}}">
+<p>{{todo.name}}</p>
+</a>
