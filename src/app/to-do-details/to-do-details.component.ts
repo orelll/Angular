@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { ToDo } from '../common/todo';
-import { ActivatedRoute } from '@angular/router';
+import { TodoesServiceService } from '../todoes-service.service';
 
 @Component({
   selector: 'app-to-do-details',
@@ -10,11 +11,19 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ToDoDetailsComponent implements OnInit {
 
-todo: ToDo = { id: 1, name: 'notka 1', content: 'lorem ipsum'};
+  todo: ToDo;
 
-  constructor(private location: Location) { }
+  constructor(private location: Location,
+    private route: ActivatedRoute,
+    private todoesService: TodoesServiceService) { }
 
   ngOnInit(): void {
+    this.getToDo();
+  }
+
+  getToDo() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.todo = this.todoesService.getToDo(id);
   }
 
   goBack(): void {
