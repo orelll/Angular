@@ -1,7 +1,0 @@
-<p>Moje notatki</p>
-
-<ul class="todoes">
-  <li *ngFor="let todo of todoes" [class.selected]="todo === selectedTodo" (click)="onSelect(todo)">
-    <span class="badge">{{todo.id}}</span> {{todo.name}}
-  </li>
-</ul>

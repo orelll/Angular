@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TodoesServiceService } from '../todoes-service.service';
 import { ToDo } from '../common/todo';
 
 @Component({
@@ -8,18 +9,17 @@ import { ToDo } from '../common/todo';
 })
 export class DashboardComponent implements OnInit {
 
-  todoes: ToDo[] = TODOES;
+  todoes: ToDo[];
 
-  constructor() { }
+  constructor(private todoesService: TodoesServiceService) { 
+    this.loadTodoes();
+  }
 
   ngOnInit(): void {
   }
 
+  loadTodoes() {
+    this.todoes = this.todoesService.getToDoes();
+  }
+
 }
-
-
-export const TODOES: ToDo[] = [
-  { id: 11, name: 'Zakupy', content: 'Mleko, mąka, jajka' },
-  { id: 12, name: 'Mechanik', content: 'Zapytać o wymianę filtrów' },
-  { id: 13, name: 'Prezenty', content: 'Książka dla taty' }
-];

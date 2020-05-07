@@ -3,16 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
+import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ToDoesComponent } from './to-does/to-does.component';
+import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToDoDetailsComponent,
     DashboardComponent,
-    ToDoesComponent
+    ToDoDetailsComponent
   ],
   imports: [
     BrowserModule,
