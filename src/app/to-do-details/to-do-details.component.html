@@ -1,2 +1,20 @@
-<p>to-do-details works!</p>
-<h2>{{todo.id}}, {{todo.name}}</h2>
+<div>
+  <div class="header">
+    <div class="icons_line">
+      <a class="back_button" routerLink="/dashboard" title="wróć">
+        <i></i>
+      </a>
+      <a class="pin_button" >
+        <i></i>
+      </a>
+    </div>
+  </div>
+  <div class="note_body">
+    <div class="header">
+      <p>{{ todo.name }}</p>
+    </div>
+    <div>
+      <p>({{ todo.content }})</p>
+    </div>
+  </div>
+</div>
