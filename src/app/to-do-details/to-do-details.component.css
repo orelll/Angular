@@ -1,0 +1,29 @@
+.note_style {
+  margin: 15px;
+  border: 2px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #626262;
+}
+
+#top_header{
+    margin-top: 5px;
+    padding-bottom: 15px;
+    background-color: yellow;
+}
+
+#top_header > p, a {
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+#top_header > p {
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline;
+    margin: 5px 10px;
+  }
+
+  #note{
+      margin: 20px;
+  }
