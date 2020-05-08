@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoesServiceService } from '../todoes-service.service';
 import { ToDo } from '../common/todo';
-import {  TodoesServiceService} from '../todoes-service.service';
  
 @Component({
   selector: 'app-dashboard',
@@ -22,7 +21,5 @@ export class DashboardComponent implements OnInit {
   getTodoes(){
     this.todoes = this.todesService.getToDoes();
   }
-
-}
 
 }
