@@ -6,24 +6,39 @@
   border-color: #626262;
 }
 
-#top_header{
-    margin-top: 5px;
-    padding-bottom: 15px;
-    background-color: yellow;
+#top_header {
+  margin-top: 5px;
+  padding-bottom: 15px;
 }
 
 #top_header > p, a {
   display: inline-block;
-  margin: 5px 10px;
+}
+
+#top_header > a{
+  width: 10%;
+}
+
+.header_icon {
+  height: 20px;
 }
 
 #top_header > p {
-    font-size: xx-large;
-    font-weight: bold;
-    display: inline;
-    margin: 5px 10px;
-  }
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
 
-  #note{
-      margin: 20px;
-  }
+#note {
+  display: block;
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border: #a7a7a7;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
