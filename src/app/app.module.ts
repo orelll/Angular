@@ -6,6 +6,11 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { HttpClientModule } from '@angular/common/http';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import { ColorPickerModule } from 'ngx-color-picker';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ColorPickerModule
+    BrowserAnimationsModule,
+    ColorPickerModule,
+    HttpClientModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

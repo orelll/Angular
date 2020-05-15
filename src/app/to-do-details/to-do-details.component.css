@@ -46,7 +46,14 @@
 }
 
 #note_color_picker{
-  height: 25px;
-  width: 25px;
-  background-image: url('../../assets/icons/wheels.svg');
+  float: left;
+}
+
+#note_menu{
+  float: right;
+}
+
+#note_footer{
+  height: 35px;
+  vertical-align: middle;
 }

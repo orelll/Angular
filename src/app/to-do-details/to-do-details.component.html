@@ -1,20 +1,42 @@
 <div id="note" class="grid-container" [ngStyle]="setNoteStyles()">
   <div id="top_header" class="row">
     <a href="dashboard">
-      <img class="header_icon" src="../../assets/icons/move_back.svg">
+      <mat-icon svgIcon="move-back" aria-hidden="false" class="icon_small"></mat-icon>
     </a>
     <p>{{todo.name}}</p>
   </div>
   <div id="note_content" class="row">
     <p>{{todo.content}}</p>
   </div>
-  <div id="note_footer" class="row">
-    <input id="note_color_picker"  type="image" src="../../assets/icons/wheels.svg" 
-    [(colorPicker)]="background" [style.background]="background" [style.border]="border"
-    [cpOKButton]="true" [cpOKButtonText]="cpZapiszText"
-    [cpCancelButton]="true" [cpCancelButtonText]="cpAnulujText"
-    [cpSaveClickOutside]="false"
-    (colorPickerChange)="cpColorChanged()"
-    (colorPickerClose)="cpClose()"/>
+  <div class="row" id="note_footer">
+
+    <button id="note_color_picker" mat-icon-button [(colorPicker)]="background" [style.background]="background"
+      [cpOKButton]="true" [cpOKButtonText]="cpZapiszText" cpOKButtonClass="mat-raised-button primary"
+      [cpCancelButton]="true" [cpCancelButtonText]="cpAnulujText" cpCancelButtonClass="mat-raised-button tomato"
+      [cpSaveClickOutside]="false" (colorPickerChange)="cpColorChanged()" (colorPickerClose)="cpClose()">
+      <mat-icon svgIcon="colors-wheel" class="icon_small"></mat-icon>
+    </button>
+
+    <button id="note_menu" mat-icon-button [matMenuTriggerFor]="menu" >
+      <mat-icon svgIcon="menu-three-dots" class="icon_small"></mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon svgIcon="camera"></mat-icon>
+        <span>Zrób zdjęce</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon svgIcon="picture"></mat-icon>
+        <span>Dodaj obraz</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon svgIcon="checkmark"></mat-icon>
+        <span>Lista</span>
+      </button>
+    </mat-menu>
+
+
   </div>
 </div>
