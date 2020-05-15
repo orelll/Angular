@@ -9,11 +9,11 @@ export class TodoesServiceService {
 
   constructor() { }
 
-getToDoes():ToDo[]{
+getToDoes(): ToDo[]{
   return TODOES;
 }
 
-  getToDo(id: number):ToDo {
+  getToDo(id: number): ToDo {
     return TODOES.find(todo => todo.id === id);
   }
 }
