@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

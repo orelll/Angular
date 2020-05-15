@@ -9,6 +9,12 @@
     <p>{{todo.content}}</p>
   </div>
   <div id="note_footer" class="row">
-
+    <input id="note_color_picker"  type="image" src="../../assets/icons/wheels.svg" 
+    [(colorPicker)]="background" [style.background]="background" [style.border]="border"
+    [cpOKButton]="true" [cpOKButtonText]="cpZapiszText"
+    [cpCancelButton]="true" [cpCancelButtonText]="cpAnulujText"
+    [cpSaveClickOutside]="false"
+    (colorPickerChange)="cpColorChanged()"
+    (colorPickerClose)="cpClose()"/>
   </div>
 </div>
