@@ -10,6 +10,8 @@ import { ToDo } from '../common/todo';
 })
 export class ToDoDetailsComponent implements OnInit {
   todo: ToDo;
+  background: string;
+  border: string;
 
   constructor(
     private todoesService: TodoesServiceService,
@@ -18,7 +20,10 @@ export class ToDoDetailsComponent implements OnInit {
     this.getToDoDetails();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.background = '#f3f3f3';
+    this.border = '#a7a7a7';
+  }
 
   getToDoDetails() {
     const id = +this.route.snapshot.paramMap.get('id');

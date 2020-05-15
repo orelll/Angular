@@ -7,3 +7,13 @@
 body{
     background-color: #ffffff;
 }
+
+.icon_small{
+    width: 25px;
+}
+
+.icon_medium{
+    width: 40px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

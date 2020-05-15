@@ -1,9 +1,18 @@
-<div id="note">
+<div id="note" [style.background]="background" [style.border-color]="border">
+
   <div id="top_header">
-    <a href="dashboard">wróc</a>
+    <a href="dashboard">
+      <mat-icon svgIcon="move-back"></mat-icon>
+    </a>
     <p>{{todo.name}}</p>
   </div>
+
   <div id="note_content">
     <p>{{todo.content}}</p>
+  </div>
+
+  <div id="note_footer">
+    <button id="note_color_picker">
+      <mat-icon svgIcon="colors-wheel"></mat-icon> </button>
   </div>
 </div>
