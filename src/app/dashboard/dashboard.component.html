@@ -4,11 +4,14 @@
 <div>
   <ul *ngFor="let todo of todoes">
     <li class="todo">
-      <a routerLink="/todo/{{todo.id}}">
-        <div>
-          <h4 class="todoHeader">{{todo.name}}</h4>
-        </div>
-      </a>
+      <div class="container-lg">
+
+        <a routerLink="/todo/{{todo.id}}">
+          <div>
+            <h4 class="todoHeader">{{todo.name}}</h4>
+          </div>
+        </a>
+      </div>
     </li>
   </ul>
 

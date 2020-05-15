@@ -1,11 +1,14 @@
-<div id="note" class="grid-container">
-  <div id="top_header">
+<div id="note" class="grid-container" [ngStyle]="setNoteStyles()">
+  <div id="top_header" class="row">
     <a href="dashboard">
       <img class="header_icon" src="../../assets/icons/move_back.svg">
     </a>
     <p>{{todo.name}}</p>
   </div>
-  <div id="note_content">
+  <div id="note_content" class="row">
     <p>{{todo.content}}</p>
+  </div>
+  <div id="note_footer" class="row">
+
   </div>
 </div>
