@@ -20,10 +20,16 @@
 }
 
 #note {
-  margin: 20px;
   border: 2px solid;
   border-radius: 8px;
   padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 500px;
+  min-width: 200px;
+  width: 33%;
 }
 
 #note_content{
@@ -32,6 +38,5 @@
 }
 
 #note_color_picker{
-  height: 30px;
-  width: 30px;
+  
 }

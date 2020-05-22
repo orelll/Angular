@@ -12,7 +12,12 @@
   </div>
 
   <div id="note_footer">
-    <button id="note_color_picker">
+    <button [(colorPicker)]="background" [style.background]="background" 
+    class="icon_small" 
+    [cpOKButton]=true [cpOKButtonText]="cpOkButtonText"
+    [cpCancelButton]="true" [cpCancelButtonText]="cpAnulujText"
+    [cpSaveClickOutside]="false" 
+    (colorPickerChange)="colorChanged()">
       <mat-icon svgIcon="colors-wheel"></mat-icon> </button>
   </div>
 </div>

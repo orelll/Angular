@@ -7,6 +7,7 @@ import { ToDoDetailsComponent } from './to-do-details/to-do-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon' ; 
 import { HttpClientModule } from '@angular/common/http';
+import { ColorPickerModule } from 'ngx-color-picker';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

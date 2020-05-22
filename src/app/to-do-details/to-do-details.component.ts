@@ -12,6 +12,8 @@ export class ToDoDetailsComponent implements OnInit {
   todo: ToDo;
   background: string;
   border: string;
+  cpOkButtonText = 'Zapisz';
+  cpAnulujText = 'Zamknij';
 
   constructor(
     private todoesService: TodoesServiceService,
@@ -28,5 +30,9 @@ export class ToDoDetailsComponent implements OnInit {
   getToDoDetails() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.todo = this.todoesService.getToDo(id);
+  }
+
+  colorChanged(){
+    console.log(`Color was changed to ${this.background}`);
   }
 }
