@@ -1,0 +1,9 @@
+#searchbox{
+    height: 50px;
+    min-width: 200px;
+    width: 30%;
+    margin: auto;
+    max-width: 600px;
+    background-color: #d6d6d6;
+    display: block;
+}

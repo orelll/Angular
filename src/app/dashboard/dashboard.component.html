@@ -1,19 +1,22 @@
-<div class="topRow">
-  <p class="header">Najnowsze notatki</p>
-</div>
 <div>
-  <ul *ngFor="let todo of todoes">
-    <li class="todo">
-      <div class="container-lg">
+  <div>
+    <app-to-do-search></app-to-do-search>
+  </div>
+  <div class="topRow">
+    <p class="header">Najnowsze notatki</p>
+  </div>
+  <div>
+    <ul *ngFor="let todo of todoes">
+      <li class="todo">
+        <div class="container-lg">
 
-        <a routerLink="/todo/{{todo.id}}">
-          <div>
-            <h4 class="todoHeader">{{todo.name}}</h4>
-          </div>
-        </a>
-      </div>
-    </li>
-  </ul>
-
-
+          <a routerLink="/todo/{{todo.id}}">
+            <div>
+              <h4 class="todoHeader">{{todo.name}}</h4>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
