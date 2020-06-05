@@ -17,6 +17,17 @@ export class AppComponent {
       sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/wheels.svg'));
     iconRegistry.addSvgIcon(
       'move-back',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/move_back.svg'));
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/move_back.svg')); 
+         
+      iconRegistry.addSvgIcon(
+      'camera',
+      
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/camera.svg'));    
+      iconRegistry.addSvgIcon(
+      'checked',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/checked.svg'));    
+      iconRegistry.addSvgIcon(
+      'picture',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/icons/picture.svg'));
   }
 }

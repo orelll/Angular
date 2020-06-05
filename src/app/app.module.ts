@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon' ; 
 import { HttpClientModule } from '@angular/common/http';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ColorPickerModule } from 'ngx-color-picker';
     HttpClientModule,
     BrowserAnimationsModule,
     MatIconModule,
-    ColorPickerModule
+    ColorPickerModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

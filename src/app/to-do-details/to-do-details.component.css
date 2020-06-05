@@ -37,6 +37,12 @@
   margin-right: 5px;
 }
 
-#note_color_picker{
-  
+#menuButton{
+  float: right;
+  border-style: none;
+  background-color: transparent;
+}
+
+#colorPicker{
+  background-color: transparent;
 }

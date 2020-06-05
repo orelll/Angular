@@ -1,23 +1,45 @@
 <div id="note" [style.background]="background" [style.border-color]="border">
-
   <div id="top_header">
     <a href="dashboard">
       <mat-icon svgIcon="move-back"></mat-icon>
     </a>
-    <p>{{todo.name}}</p>
+    <p>{{ todo.name }}</p>
   </div>
 
   <div id="note_content">
-    <p>{{todo.content}}</p>
+    <p>{{ todo.content }}</p>
   </div>
 
   <div id="note_footer">
-    <button [(colorPicker)]="background" [style.background]="background" 
-    class="icon_small" 
-    [cpOKButton]=true [cpOKButtonText]="cpOkButtonText"
-    [cpCancelButton]="true" [cpCancelButtonText]="cpAnulujText"
-    [cpSaveClickOutside]="false" 
-    (colorPickerChange)="colorChanged()">
-      <mat-icon svgIcon="colors-wheel"></mat-icon> </button>
+    <button id="colorPicker"
+      [(colorPicker)]="background"
+      [style.background]="background"
+      class="icon_small"
+      [cpOKButton]="true"
+      [cpOKButtonText]="cpOkButtonText"
+      [cpCancelButton]="true"
+      [cpCancelButtonText]="cpAnulujText"
+      [cpSaveClickOutside]="false"
+      (colorPickerChange)="colorChanged()"
+    >
+      <mat-icon svgIcon="colors-wheel"></mat-icon>
+    </button>
+    <button id="menuButton" [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon svgIcon="camera"></mat-icon>
+        <span>Make a photo</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon svgIcon="picture"></mat-icon>
+        <span>Select photo</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon svgIcon="checked"></mat-icon>
+        <span>Add tickmarks</span>
+      </button>
+    </mat-menu>
   </div>
 </div>
