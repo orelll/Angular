@@ -9,12 +9,14 @@ import { MatIconModule } from '@angular/material/icon' ;
 import { HttpClientModule } from '@angular/common/http';
 import { ColorPickerModule } from 'ngx-color-picker';
 import { MatMenuModule } from '@angular/material/menu';
+import { ToDoPreviewComponent } from './to-do-preview/to-do-preview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    ToDoDetailsComponent
+    ToDoDetailsComponent,
+    ToDoPreviewComponent
   ],
   imports: [
     BrowserModule,

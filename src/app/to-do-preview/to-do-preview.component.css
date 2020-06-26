@@ -1,0 +1,19 @@
+#noteContainer {
+  margin: 15px 10px;
+  padding: 10px;
+  background-color: #f8d847;
+  min-height: 60px;
+}
+
+
+
+#noteHeader{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#notePreview{
+    margin-top: auto;
+    margin-bottom: auto;
+}

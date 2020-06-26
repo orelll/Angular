@@ -1,4 +1,10 @@
 <h3>Najnowsze notatki</h3>
-<a *ngFor="let todo of todoes" routerLink="/todo/{{todo.id}}">
-<p>{{todo.name}}</p>
-</a>
+
+<div id="listContainer">
+  <app-to-do-preview
+    id="toDoPreview"
+    *ngFor="let todo of todoes"
+    [currentToDo]="todo"
+    routerLink="/todo/{{ todo.id }}"
+  ></app-to-do-preview>
+</div>
